@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a{
+    padding:8px ;
+    border-radius:8px ;
+}
+
+@media screen and (max-width: 400px) {
+    nav h1 a{
+        font-size: 24px !important;
+        padding-left: 0;
+    }
+    nav .btn{
+        right: 20px;
+        top: 33px;
+    }
+  }
+  body{
+    background-color: #1abc9c;
+  }

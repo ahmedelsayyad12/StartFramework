@@ -6,6 +6,8 @@ import Home from "./Pages/Home/Home"
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact/Contact";
+import NotFound from "./Pages/NotFound/NotFound";
+
 function App() {
   const routes = createBrowserRouter([
     {path:'/', element:<Layout/>, children:[
@@ -13,7 +15,8 @@ function App() {
       {path:'/home', element:<Home/>},
       {path:'about', element:<About/>},
       {path:'portfolio', element:<Portfolio/>},
-      {path:'contact', element:<Contact/>}
+      {path:'contact', element:<Contact/>},
+      {path:'*', element:<NotFound/>}
     ]}
 ])
 return (
